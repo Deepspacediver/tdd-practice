@@ -1,5 +1,13 @@
-import test1 from "../capitalize";
+import capitalizeString from "../capitalize";
 
-test("returns 1", () => {
-  expect(test1()).toBe(1);
+test("Capitalizes one word", () => {
+  expect(capitalizeString("hello")).toBe("Hello");
+});
+
+test("Capitalizes a sentence", () => {
+  expect(capitalizeString("this is my dog")).toBe("This is my dog");
+});
+
+test("If parameter not provided, return empty string", () => {
+  expect(capitalizeString("")).toBe("");
 });

@@ -1,3 +1,3 @@
-const test1 = () => 1
+const capitalizeString = (string) => string.charAt(0).toUpperCase() + string.slice(1)
 
-export default test1
+export default capitalizeString
